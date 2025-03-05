@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "[PVE] ♥설레임♥ 모딩서버 | 뉴비환영 | 디코필수",
+    "description": "♥설레임♥ PVE 평화서버│뉴비 환영│초기 플레이 아이템 지원│디스코드 필수",
+    "Community": "https://discord.gg/example1",
+    "region": "Asia",
+    "gamemode": "PvE"
+  },
+  {
+    "id": "2",
+    "name": "[PVE 초비공 시즌2]♥다람쥐 서버♥오픈톡'다람쥐'문의",
+    "description": "Join us for some competitive gameplay.",
+    "Community": "https://open.kakao.com/o/gPX8Nnfh",
+    "region": "Asia",
+    "gamemode": "PvE"
+  }
+]

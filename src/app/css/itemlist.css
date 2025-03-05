@@ -1,0 +1,215 @@
+
+@media (max-width: 576px) {
+  .table td, .table th {
+    padding: 0.5rem;
+  }
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 576px) {
+  .table img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Hide description and category columns on smaller screens */
+@media (max-width: 576px) {
+  .table th:nth-child(3), .table td:nth-child(3), 
+  .table th:nth-child(4), .table td:nth-child(4)   {
+    display: none;
+  }
+}
+
+/* Custom table styles */
+.table {
+  background-color: #222133; 
+  color: #ffffff; 
+}
+
+.table th, .table td {
+  border-color: #444; 
+}
+
+.table th {
+  color: #ffffff; 
+}
+
+.table td img {
+  width: 60px; 
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Custom search bar and dropdown styles */
+.custom-input {
+  background-color: #161629;
+  border: 1px solid #444;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.custom-input:focus {
+  background-color: #161629; 
+  color: #ffffff; 
+  outline: none; 
+  box-shadow: none; 
+}
+
+.custom-input::placeholder {
+  color: #888; 
+}
+
+.custom-input-icon {
+  position: relative;
+}
+
+.custom-input-icon input {
+  padding-left: 30px; 
+}
+
+.custom-input-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888; 
+}
+
+.custom-select {
+  background-color: #161629;
+  border: 1px solid #444;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.custom-select:focus {
+  background-color: #161629; 
+  color: #ffffff; 
+  outline: none; 
+  box-shadow: none; 
+}
+.table-responsive table {
+  background-color: #242335;
+  color: #fff;
+}
+
+
+/* Ensure the table body rows and cells inherit text color */
+.table-responsive table tbody tr,
+.table-responsive table tbody tr td {
+  background-color: #dbdbdb;
+  color: #111111;
+}
+.table th,
+.table td {
+  border-color: transparent; 
+  vertical-align: middle;
+}
+
+/* Icon grid using CSS Grid for 7 items per row */
+@media (max-width: 576px) {
+  .icon-container:hover .icon-image {
+    transform: none;
+  }
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+/* Each icon container */
+.icon-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  cursor: pointer;
+}
+
+/* Icon image styling */
+.icon-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.icon-container:hover .icon-image {
+  transform: scale(1.05);
+}
+
+
+
+/* --- Modal Styles for Grid View on Small Screens --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #242335;
+  padding: 20px;
+  max-width: 90%;
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-info {
+  color: #fff;
+}
+
+/* --- Update Unselected Tab Colors --- */
+.nav-tabs .nav-link {
+  color: #97BCFD;
+}
+
+.nav-tabs .nav-link.active {
+  color: #000; 
+  background-color: #fff; 
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 576px) {
+  .icon-container:hover .icon-image {
+    transform: none;
+  }
+}

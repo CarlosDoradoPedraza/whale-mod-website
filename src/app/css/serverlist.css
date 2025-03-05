@@ -1,0 +1,152 @@
+.text-white {
+    color: #ffffff;
+  }
+
+  
+
+/* Search bar styling */
+.search-bar {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; 
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #161629;
+  color: #ffffff; 
+  font-weight: bold;
+  transition: border-color 0.2s ease;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #161629; 
+  color: #ffffff; 
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+/* Search icon styling */
+.search-bar .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #7a7a7a; 
+  font-size: 18px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.dropdown button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #161629;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.dropdown button:focus {
+  border-color: #5a6ea3;
+  outline: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #161629;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #444;
+}
+
+.dropdown-content a:hover {
+  background-color: #5a6ea3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Server card styling */
+.card {
+  background-color: #161629;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-body .row {
+  align-items: center;
+}
+
+.card-body .col-md-2 {
+  margin-bottom: 10px;
+}
+
+.card-body .col-md-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-body .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-body .col-md-2,
+  .card-body .col-md-10 {
+    width: 100%;
+  }
+
+  .card-body .col-md-2 {
+    text-align: center;
+  }
+
+  .card-body .col-md-10 {
+    text-align: left;
+  }
+}
